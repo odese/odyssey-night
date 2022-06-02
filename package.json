@@ -4,6 +4,7 @@
     "description": "Odyssey Night - Another Dark Theme for Visual Studio Code",
     "version": "0.0.1",
     "license": "MIT",
+    "publisher": "odese",
     "repository": {
         "type": "git",
         "url": "https://github.com/odese/odyssey-night"
