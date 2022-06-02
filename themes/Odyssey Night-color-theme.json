@@ -181,7 +181,7 @@
 
 		"editorMarkerNavigation.background": "#101014"
 	},
-    "semanticHighlighting": true,
+	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"enumMember": {
 			"foreground": "#56b6c2"
@@ -2078,5 +2078,4 @@
 			}
 		}
 	]
-
 }
