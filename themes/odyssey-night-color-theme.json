@@ -3,7 +3,7 @@
 	"colors": {
 		// General ...
 		"foreground": "#a9b1d6",
-		"focusBorder": "#e933da",
+		"focusBorder": "#ad33ff", //ad33ff
 		"progressBar.background": "#ffb401",
 		"selection.background": "#0053A6",
 
@@ -12,7 +12,7 @@
 		"activityBar.background": "#1a1b26",
 		"activityBar.inactiveForeground": "#d7dae080",
 		"activityBarBadge.foreground": "#d7dae0",
-		"activityBarBadge.background": "#3A5A99",
+		"activityBarBadge.background": "#3d59a1", //3A5A99
 		"activityBar.activeBackground": "#101014",
 
 		// Side Bar ...
@@ -59,7 +59,7 @@
 		// Menu ...
 		"menu.background": "#16161e",
 		"menu.foreground": "#abb2bf",
-		"menu.separatorBackground": "#e933da",
+		"menu.separatorBackground": "#ad33ff",
 
 		// Button ...
 		"button.background": "#3d59a1d9",
@@ -74,9 +74,9 @@
 		"input.border": "#34364c80",
 		"input.foreground": "#d7dae0",
 		"input.placeholderForeground": "#d7dae080",
-		"inputOption.activeBackground": "#000000",
-		"inputOption.activeBorder": "#e933da",
-		"inputOption.activeForeground": "#e933da",
+		"inputOption.activeBackground": "#ad33ffbf",
+		// "inputOption.activeBorder": "#ad33ff",
+		// "inputOption.activeForeground": "#d7dae0",
 		"inputOption.hoverBackground": "#000000",
 
 		// Panel ...
@@ -143,12 +143,12 @@
 		"debugToolBar.border": "#cc6633",
 
 		// Widgets ...
-		"widget.shadow": "#e933da80",
+		"widget.shadow": "#ad33ffbf",
 		"editorWidget.background": "#101014",
-		"editorWidget.border": "#e933da80",
+		"editorWidget.border": "#ad33ffbf",
 		// Suggest ...
 		"editorSuggestWidget.background": "#101014",
-		"editorSuggestWidget.border": "#007fd4bf",
+		"editorSuggestWidget.border": "#ad33ffbf",
 		// Notification ...
 		"notifications.background": "#101014",
 
@@ -159,12 +159,12 @@
 		"editorLineNumber.activeForeground": "#a9b1d6",
 		"editorCursor.foreground": "#e9bb05", // 528bff
 		// Selection ...
-		"editor.selectionBackground": "#3d59a180",
+		"editor.selectionBackground": "#3d59a1bf",
 		"editor.selectionHighlightBorder": "#d7dae033",
 		// Match ...
-		"editor.findMatchBackground": "#d4af3780",
+		"editor.findMatchBackground": "#ff8c00bf",
 		"editor.findMatchBorder": "#d4af3733",
-		"editor.findMatchHighlightBackground": "#3d59a1bf",
+		"editor.findMatchHighlightBackground": "#ad33ffbf",
 		// Bracket
 		"editorBracketHighlight.foreground1": "#e9967a",
 		"editorBracketHighlight.foreground2": "#90ee90",
