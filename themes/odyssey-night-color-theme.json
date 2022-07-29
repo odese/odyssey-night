@@ -3,16 +3,16 @@
 	"colors": {
 		// General ...
 		"foreground": "#a9b1d6",
-		"focusBorder": "#ad33ff", //ad33ff
+		"focusBorder": "#ad33ff",
 		"progressBar.background": "#ffb401",
-		"selection.background": "#0053A6",
+		"selection.background": "#3b3bb6",
 
 		// Activity Bar ...
 		"activityBar.foreground": "#d7dae0",
 		"activityBar.background": "#1a1b26",
 		"activityBar.inactiveForeground": "#d7dae080",
 		"activityBarBadge.foreground": "#d7dae0",
-		"activityBarBadge.background": "#3d59a1", //3A5A99
+		"activityBarBadge.background": "#3b3bb6",
 		"activityBar.activeBackground": "#101014",
 
 		// Side Bar ...
@@ -62,9 +62,9 @@
 		"menu.separatorBackground": "#ad33ff",
 
 		// Button ...
-		"button.background": "#3d59a1d9",
+		"button.background": "#3b3bb6d9",
 		"button.foreground": "#ffffff",
-		"button.hoverBackground": "#3d59a180",
+		"button.hoverBackground": "#3b3bb680",
 		"button.secondaryBackground": "#3a3d41d9",
 		"button.secondaryForeground": "#ffffff",
 		"button.secondaryHoverBackground": "#3a3d4180",
@@ -133,14 +133,14 @@
 		"breadcrumb.background": "#16161e",
 
 		// Scrollbar ...
-		"scrollbar.shadow": "#3d59a180",
-		"scrollbarSlider.activeBackground": "#3d59a1",
-		"scrollbarSlider.background": "#3d59a180",
-		"scrollbarSlider.hoverBackground": "#3d59a1bf",
+		"scrollbar.shadow": "#3b3bb680",
+		"scrollbarSlider.background": "#3b3bb680", 
+		"scrollbarSlider.hoverBackground": "#3b3bb6bf",
+		"scrollbarSlider.activeBackground": "#3b3bb6", 
 
 		// Debug Tool Bar ...
 		"debugToolBar.background": "#101014",
-		"debugToolBar.border": "#cc6633",
+		"debugToolBar.border": "#3b3bb680",
 
 		// Widgets ...
 		"widget.shadow": "#ad33ffbf",
@@ -157,14 +157,15 @@
 		"editor.foreground": "#d7dae0",
 		"editorLineNumber.foreground": "#a9b1d680",
 		"editorLineNumber.activeForeground": "#a9b1d6",
-		"editorCursor.foreground": "#e9bb05", // 528bff
+		"editorCursor.foreground": "#e9bb05",
 		// Selection ...
-		"editor.selectionBackground": "#3d59a1bf",
+		"editor.selectionBackground": "#96827D80",
+        "editor.selectionHighlightBackground": "#d7dae00d",
 		"editor.selectionHighlightBorder": "#d7dae033",
-		// Match ...
-		"editor.findMatchBackground": "#ff8c00bf",
+		// Match ... 824E3580
+		"editor.findMatchBackground": "#923d2a83", //ff8c00bf, e86826, 603927, 
 		"editor.findMatchBorder": "#d4af3733",
-		"editor.findMatchHighlightBackground": "#ad33ffbf",
+		// "editor.findMatchHighlightBackground": "#ad33ffbf",
 		// Bracket
 		"editorBracketHighlight.foreground1": "#e9967a",
 		"editorBracketHighlight.foreground2": "#90ee90",
