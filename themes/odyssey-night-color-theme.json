@@ -299,7 +299,7 @@
         // Go
 		{
 			"name": "Raw String (JSON Tag)",
-			"scope": "string.quoted.raw",
+			"scope": "source.go string.quoted.raw",
 			"settings": {
 				"foreground": "#c84b61"
 			}
@@ -307,7 +307,7 @@
         // Storage Type Colors
         {
 			"name": "Storage Types",
-			"scope": "storage.type",
+			"scope": "source.go storage.type",
 			"settings": {
 				"foreground": "#3bbea4",
                 "fontStyle": "italic"
@@ -315,7 +315,7 @@
 		},
         {
 			"name": "Error Type",
-			"scope": "storage.type.error",
+			"scope": "source.go storage.type.error",
 			"settings": {
 				"foreground": "#d60076",
                 "fontStyle": "italic"
@@ -325,8 +325,8 @@
         {
 			"name": "Interface & Struct Keyword",
 			"scope": [
-                "keyword.struct", //
-                "keyword.interface"
+                "source.go keyword.struct", //
+                "source.go keyword.interface"
             ],
 			"settings": {
 				"foreground": "#6b9aff",
@@ -335,7 +335,7 @@
 		},
         {
             "name": "Map Keyword",
-            "scope": "keyword.map",
+            "scope": "source.go keyword.map",
             "settings": {
                 "foreground": "#d468f5",
                 "fontStyle": "italic"
@@ -343,21 +343,21 @@
         },
         {
             "name": "Type Keyword",
-            "scope": "keyword.type",
+            "scope": "source.go keyword.type",
             "settings": {
                 "foreground": "#ad33ff"
             }
         },
         {
             "name": "Constant Keyword",
-            "scope": "keyword.const",
+            "scope": "source.go keyword.const",
             "settings": {
                 "foreground": "#ad33ff"
             }
         },
         {
             "name": "Var Keyword",
-            "scope": "keyword.var",
+            "scope": "source.go keyword.var",
             "settings": {
                 "foreground": "#3d71ff"
             }
@@ -365,8 +365,8 @@
         {
             "name": "Package & Import Keywords",
             "scope": [
-                "keyword.package",//
-                "keyword.import"
+                "source.go keyword.package",//
+                "source.go keyword.import"
             ],
             "settings": {
                 "foreground": "#3d71ff"
@@ -374,21 +374,21 @@
         },
         {
             "name": "Function Keyword",
-            "scope": "keyword.function",
+            "scope": "source.go keyword.function",
             "settings": {
                 "foreground": "#ad33ff",
             }
         },
         {
             "name": "Control Keywords",
-            "scope": "keyword.control",
+            "scope": "source.go keyword.control",
             "settings": {
                 "foreground": "#ff0096"
             }
         },
         {
             "name": "Operators",
-            "scope": "keyword.operator",
+            "scope": "source.go keyword.operator",
             "settings": {
                 "foreground": "#ff0096"
             }
@@ -396,7 +396,7 @@
         // Support
         {
             "name": "Function Name (Call)",
-            "scope": "support.function",
+            "scope": "source.go support.function",
             "settings": {
                 "foreground": "#0e9fe3",
             }
@@ -404,14 +404,14 @@
         // Entity & Variable Colors
         {
             "name": "Function Name (Declaration)",
-            "scope": "entity.name.function",
+            "scope": "source.go entity.name.function",
             "settings": {
                 "foreground": "#ffb401",
             }
         },
         {
             "name": "Type Name",
-            "scope": "entity.name.type",
+            "scope": "source.go entity.name.type",
             "settings": {
                 "foreground": "#ffb401",
             }
@@ -419,8 +419,8 @@
         {
             "name": "Variable",
             "scope": [
-                "variable.other.assignment",//
-                "variable.other.declaration"
+                "source.go variable.other.assignment",//
+                "source.go variable.other.declaration"
             ],
             "settings": {
                 "foreground": "#2ee2fa"
@@ -428,14 +428,14 @@
         },
         {
             "name": "Import Name",
-            "scope": "entity.name.import",
+            "scope": "source.go entity.name.import",
             "settings": {
                 "foreground": "#b87e70"
             }
         },
         {
             "name": "Import Alias",
-            "scope": "entity.alias.import",
+            "scope": "source.go entity.alias.import",
             "settings": {
                 "foreground": "#95d0f0"
             }
@@ -443,7 +443,7 @@
         // Values
         {
             "name": "Nil & Boolean Values",
-            "scope": "constant.language",
+            "scope": "source.go constant.language",
             "settings": {
                 "foreground": "#f35de6"
             }
@@ -457,7 +457,7 @@
         },
         {
             "name": "String Value",
-            "scope": "string.quoted",
+            "scope": "source.go string.quoted",
             "settings": {
                 "foreground": "#ff8b39"
             }
