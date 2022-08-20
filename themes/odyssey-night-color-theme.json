@@ -170,7 +170,7 @@
 		"editor.selectionHighlightBackground": "#d7dae00d",
 		"editor.selectionHighlightBorder": "#d7dae033",
 		// Match
-		"editor.findMatchBackground": "#e8682680", 
+		"editor.findMatchBackground": "#e8682659", 
         "editor.findMatchBorder": "#e86826",
         "editor.findMatchHighlightBorder": "#7aa2f7",
 		"editor.findMatchHighlightBackground": "#7aa2f759",
@@ -193,43 +193,114 @@
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
-		"enumMember": {
-			"foreground": "#56b6c2"
-		},
-		"variable.constant": {
-			"foreground": "#d19a66"
-		},
-		"variable.defaultLibrary": {
-			"foreground": "#e5c07b"
-		},
-		"variable:dart": {
-			"foreground": "#d19a66"
-		},
-		"property:dart": {
-			"foreground": "#d19a66"
-		},
-		"annotation:dart": {
-			"foreground": "#d19a66"
-		},
-		"parameter.label:dart": {
-			"foreground": "#abb2bf"
-		},
-		"macro": {
-			"foreground": "#d19a66"
-		}
-	},
+        // Dart ...
+        // Import Alias
+        "variable.importPrefix:dart": {
+            "foreground": "#95d0f0"
+        },
+        // Class Constructor
+        "class.constructor:dart": {
+            "foreground": "#b63b87"
+        },
+        // Function Name
+        "function.declaration:dart": {
+            "foreground": "#ffb401",
+            "fontStyle": "underline"
+        },
+        "function:dart": {
+            "foreground": "#0e9fe3"
+        },
+        // Method Name
+        "method.declaration:dart": {
+            "foreground": "#ffb401",
+            "fontStyle": "underline"
+        },
+        "method:dart": {
+            "foreground": "#0e9fe3"
+        },
+        // @override 
+        "property.annotation:dart": {
+            "foreground": "#ad33ff"
+        },
+        // Enum
+        "enumMember:dart": {
+            "foreground": "#72f1b8" 
+        },
+        // Property
+        "property.declaration:dart": {
+            "foreground": "#2ee2fa"
+        },
+        "property.static:dart": {
+            "foreground": "#d19a66"
+        },
+        "property:dart": {
+            "foreground": "#dcdcaa" 
+        },
+        // Parameter
+        "parameter.declaration:dart": {
+            "foreground": "#2ee2fa"
+        },
+        "parameter.label:dart": {
+            "foreground": "#fede5d",
+            "fontStyle": "italic"
+        },
+        // Variable
+        "variable:dart": {
+            "foreground": "#2ee2fa" 
+        },
+        // Dockerfile ...
+        "operator:dockerfile": {
+            "foreground": "#ad33ff",
+            "fontStyle": "bold"
+        },
+        "variable:dockerfile": {
+            "foreground": "#ffb401",
+            "fontStyle": "bold"
+        },
+        "variable.declaration:dockerfile": {
+            "foreground": "#0dbad9",
+            "fontStyle": "underline"
+        },
+        "class:dockerfile": {
+            "foreground": "#3bbea4",
+        },
+        "property:dockerfile": {
+            "foreground": "#ff0096",
+            "fontStyle": "bold underline"
+        },
+        "namespace:dockerfile": {
+            "foreground": "#2ee2fa",
+            "fontStyle": "italic"
+        },
+        "string:dockerfile": {
+            "foreground": "#c84b61"
+        },
+        "parameter:dockerfile": {
+            "foreground": "#c9d3ff"
+        },
+
+    },
 	"tokenColors": [
         {
-			"name": "Comment",
+            "name": "Comment",
 			"scope": "comment",
 			"settings": {
-				"foreground": "#40a13d", //40a13d 6A9955 ??
+                "foreground": "#40a13d",
                 "fontStyle": "italic"
 			}
 		},
-		// YAML
+        // Dockerfile ...
+        {
+            "name": "Dockerfile Keyword",
+            "scope": "source.dockerfile keyword",
+            "settings": {
+                "foreground": "#ad33ff",
+                "fontStyle": "bold"
+            }
+        },
+		// YAML ...
 		{
-			"name": "YAML Entity Name",
+            "name": "YAML Entity Name",
 			"scope": "entity.name.tag.yaml",
 			"settings": {
 				"foreground": "#24dd6e"
@@ -248,7 +319,7 @@
 		},
 		{
 			"name": "YAML Integer",
-			"scope": [
+            "scope": [
                 "constant.numeric.integer.yaml", //
                 "constant.numeric.float.yaml",
             ],
@@ -260,15 +331,15 @@
 			"name": "YAML Boolean",
 			"scope": "constant.language.boolean.yaml",
 			"settings": {
-				"foreground": "#ffe302"
+				"foreground": "#ad33ff"
 			}
 		},
-		// JSON
+		// JSON ...
 		{
 			"name": "JSON Property Name",
 			"scope": "support.type.property-name.json",
 			"settings": {
-				"foreground": "#72f1b8"
+				"foreground": "#24dd6e"
 			}
 		},
 		{
@@ -293,10 +364,10 @@
 			"name": "JSON boolean",
 			"scope": "constant.language.json",
 			"settings": {
-				"foreground": "#b657ff"
+				"foreground": "#ad33ff"
 			}
 		},
-        // Go
+        // Go ...
 		{
 			"name": "Raw String (JSON Tag)",
 			"scope": "source.go string.quoted.raw",
@@ -462,6 +533,139 @@
                 "foreground": "#ff8b39"
             }
         },
-    
+        // Go Mod & Sum ...
+        {
+            "name": "Keyword (Go Mod)",
+            "scope": "keyword.go.mod",
+            "settings": {
+                "foreground": "#ad33ff"
+            }
+        },
+        {
+            "name": "String Value",
+            "scope": [
+                "string.unquoted.go.mod",//
+                "string.unquoted.go.sum"
+            ],
+            "settings": {
+                "foreground": "#ffb401"
+            }
+        },
+        {
+            "name": "Constant (version number)",
+            "scope": [
+                "constant.language.go.mod",//
+                "constant.language.go.sum"
+            ],
+            "settings": {
+                "foreground": "#ff0096"
+            }
+        },
+        // Dart ...
+        // Keywords
+        {
+            "name": "Import Keyword",
+            "scope": "source.dart keyword.other.import",
+            "settings": {
+                "foreground": "#3d71ff"
+            }
+        },
+        {
+            "name": "Control Keywords",
+            "scope": "source.dart keyword.control",
+            "settings": {
+                "foreground": "#ff0096"
+            }
+        },
+        {
+            "name": "Storage Keywords (const, final)",
+            "scope": "source.dart storage.modifier",
+            "settings": {
+                "foreground": "#ad33ff",
+                "fontStyle": "italic"
+            }
+        },
+        {
+            "name": "@Override",
+            "scope": "source.dart storage.type.annotation",
+            "settings": {
+                "foreground": "#ad33ff"
+            }
+        },
+        {
+            "name": "Super",
+            "scope": "source.dart variable.language",
+            "settings": {
+                "foreground": "#ad33ff"
+            }
+        },
+        {
+            "name": "Class Keyword",
+            "scope": "source.dart keyword.declaration",
+            "settings": {
+                "foreground": "#ad33ff",
+                "fontStyle": "italic bold"
+            }
+        },
+        {
+            "name": "Operators",
+            "scope": "source.dart keyword.operator",
+            "settings": {
+                "foreground": "#ff0096",
+                "fontStyle": "bold"
+            }
+        },
+        // Entity Colors
+        {
+            "name": "Function Name (Declaration)",
+            "scope": "source.dart entity.name.function",
+            "settings": {
+                "foreground": "#ffb401",
+            }
+        },
+        {
+            "name": "Class Name",
+            "scope": "source.dart support.class",
+            "settings": {
+                "foreground": "#3bbea4",
+            }
+        },
+        // Storage Type Colors
+        {
+			"name": "Void Color",
+			"scope": "source.dart storage.type.primitive",
+			"settings": {
+				"foreground": "#ad33ff",
+                "fontStyle": "italic"
+			}
+		},
+        {
+            "name": "Boolean Value",
+            "scope": "source.dart constant.language",
+            "settings": {
+                "foreground": "#f35de6"
+            }
+        },
+        {
+            "name": "Numeric Value",
+            "scope": "source.dart constant.numeric",
+            "settings": {
+                "foreground": "#fede5d"
+            }
+        },
+        {
+            "name": "String Value",
+            "scope": "source.dart string.interpolated",
+            "settings": {
+                "foreground": "#ff8b39",
+            }
+        },
+        {
+            "name": "String Value (Single Quote) (For Package Name)",
+            "scope": "source.dart string.interpolated.single",
+            "settings": {
+                "foreground": "#b87e70",
+            }
+        },        
 	]
 }
