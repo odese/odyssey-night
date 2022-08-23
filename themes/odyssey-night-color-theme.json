@@ -233,6 +233,9 @@
         "property.static:dart": {
             "foreground": "#d19a66"
         },
+        "property.declaration.static:dart": {
+            "foreground": "#2ee2fa"
+        },
         "property:dart": {
             "foreground": "#dcdcaa" 
         },
