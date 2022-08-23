@@ -662,7 +662,7 @@
         },
         {
             "name": "String Value (Single Quote) (For Package Name)",
-            "scope": "source.dart string.interpolated.single",
+            "scope": "source.dart meta.declaration.dart string.interpolated.single",
             "settings": {
                 "foreground": "#b87e70",
             }
