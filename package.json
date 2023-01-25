@@ -2,7 +2,7 @@
     "name": "odyssey-night",
     "displayName": "Odyssey Night",
     "description": "Odyssey Night - Another Dark Theme for Visual Studio Code",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "license": "MIT",
     "publisher": "odese",
     "homepage": "https://github.com/odese/odyssey-night",
@@ -31,9 +31,7 @@
         "contrast",
         "vivid",
         "night",
-        "odyssey",
-        "go",
-        "golang"
+        "odyssey"
     ],
-    "icon": "icon.png"
+    "icon": "icon.jpg"
 }
