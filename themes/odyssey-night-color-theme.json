@@ -237,7 +237,7 @@
 			"foreground": "#2ee2fa"
 		},
 		"property:dart": {
-			"foreground": "#dcdcaa"
+			"foreground": "#fde69a" // dcdcaa
 		},
 		// Parameter
 		"parameter.declaration:dart": {
