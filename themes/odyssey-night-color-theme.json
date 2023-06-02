@@ -206,13 +206,30 @@
         "variable:python": {
             // "foreground":"#2ee2fa"
         },
-        "parameter.declaration:python": {
+        "parameter.declaration:python": { // bunu açınca self in rengini eziyor
             "foreground":"#2ee2fa",
             // "fontStyle":"italic"
         },
+        // Function Parameter Type Hint
         "class.typeHint:python": {
-            "foreground":"#3BBEA4",
+            "foreground":"#3bbea4",
             "fontStyle":"italic"
+        },
+        // Class Name
+        "class.declaration:python": {
+            "foreground":"#3bbea4",
+            "fontStyle":"italic"
+        },
+        "class:python": {
+            "foreground":"#b63b87",
+            "fontStyle":"bold"
+        },
+        // Self
+        "selfParameter:python": { 
+            "foreground":"#ce86b3",
+        },
+        "selfParameter.declaration:python": { 
+            "foreground":"#ce86b3",
         },
 		// Dart ...
 		// Import Alias
@@ -769,6 +786,38 @@
 				"foreground": "#3d71ff"
 			}
 		},
+        {
+			"name": "Overload Keyword",
+			"scope": "source.python entity.name.function.decorator",
+			"settings": {
+				"foreground": "#ad33ff",
+                "fontStyle": ""
+			}
+		},
+        {
+			"name": "Control Keyword",
+			"scope": "source.python keyword.control.flow",
+			"settings": {
+				"foreground": "#ff0096"
+			}
+		},
+        {
+			"name": "Class Keyword",
+			"scope": "source.python storage.type.class",
+			"settings": {
+				"foreground": "#ad33ff",
+                "fontStyle": "italic bold"
+			}
+		},
+        {
+			"name": "Definition Keyword",
+			"scope": "source.python storage.type.function",
+			"settings": {
+				"foreground": "#ad33ff",
+                "fontStyle": "italic bold"
+			}
+		},
+        // Operators
         // {
 		// 	"name": "Assignment Operator",
 		// 	"scope": "source.python keyword.operator.assignment", // assignment, arithmetic, comparison
@@ -784,13 +833,7 @@
 				// "fontStyle": "bold"
 			}
 		},
-        {
-			"name": "Function Name (Call)",
-			"scope": "source.python meta.function-call.generic, source.python support.function.builtin",
-			"settings": {
-				"foreground": "#0e9fe3"
-			}
-		},
+        // Functions
         {
 			"name": "Function Name (Declaration)",
 			"scope": "source.python entity.name.function",
@@ -800,6 +843,21 @@
 			}
 		},
         {
+			"name": "Function Name (Call)",
+			"scope": "source.python meta.function-call.generic, source.python support.function.builtin",
+			"settings": {
+				"foreground": "#0e9fe3"
+			}
+		},
+        {
+			"name": "Magic Function, Constructor",
+			"scope": "source.python support.function.magic",
+			"settings": {
+				"foreground": "#b63b87",
+			}
+		},
+        // Punctuations
+        {
 			"name": "Function Begining Punctuation",
 			"scope": "source.python punctuation.section.function.begin",
 			"settings": {
@@ -808,24 +866,25 @@
 			}
 		},
         {
-			"name": "Control Keyword",
-			"scope": "source.python keyword.control.flow",
-			"settings": {
-				"foreground": "#ff0096"
-			}
-		},
-        {
-			"name": "Control Keyword",
+			"name": "Control Begining Punctuation",
 			"scope": "source.python punctuation.separator.colon",
 			"settings": {
 				"foreground": "#ff0096"
 			}
 		},
         {
-			"name": "Control Keyword",
+			"name": "Function Return Punctuation",
 			"scope": "source.python punctuation.separator.annotation",
 			"settings": {
 				"foreground": "#ff0096"
+			}
+		},
+        // Values
+        {
+			"name": "String Value",
+			"scope": "source.python string.quoted.single",
+			"settings": {
+				"foreground": "#ff8b39"
 			}
 		},
         {
@@ -836,12 +895,13 @@
 			}
 		},
         {
-			"name": "String Value",
-			"scope": "source.python string.quoted.single",
+			"name": "Attribute Call",
+			"scope": "source.python meta.attribute.python",
 			"settings": {
-				"foreground": "#ff8b39"
+				"foreground": "#d19a66",
 			}
 		},
+        // Types
         {
 			"name": "Type Name",
 			"scope": "source.python support.type",
@@ -849,43 +909,23 @@
 				"foreground": "#3bbea4"
 			}
 		},
+        // {
+		// 	"name": "Self Name",
+		// 	"scope": "source.python variable.parameter.function.language.special.self, source.python variable.language.special.self",
+		// 	"settings": {
+		// 		"foreground": "#ce86b3"
+		// 	}
+		// },
         {
-			"name": "Definition Keyword",
-			"scope": "source.python storage.type.function",
+			"name": "Class Name",
+			"scope": "source.python entity.name.type.class",
 			"settings": {
-				"foreground": "#ad33ff",
-                "fontStyle": "italic bold"
+				"foreground": "#3bbea4"
 			}
 		},
-        {
-			"name": "Class Keyword",
-			"scope": "source.python storage.type.class",
-			"settings": {
-				"foreground": "#ad33ff",
-                "fontStyle": "italic bold"
-			}
-		},
-        {
-			"name": "Overload Keyword",
-			"scope": "source.python entity.name.function.decorator",
-			"settings": {
-				"foreground": "#ad33ff",
-			}
-		},
-        {
-			"name": "Overload Keyword",
-			"scope": "source.python support.function.magic",
-			"settings": {
-				"foreground": "#b63b87",
-			}
-		},
-        {
-			"name": "Overload Keyword",
-			"scope": "source.python meta.attribute.python",
-			"settings": {
-				"foreground": "#d19a66",
-			}
-		}
+        
+        
+        
 	]
 }
 // ffdb00 sunrise
