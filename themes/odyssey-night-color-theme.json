@@ -193,44 +193,54 @@
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
-        // Python ...
-        // Import Name and Alias
-        "module:python":{
-            "foreground":"#b87e70"
-        },
-        // Variable Name
-        "variable.declaration:python": {
-            "foreground":"#2ee2fa",
-            "fontStyle":"underline"
-        },
-        "variable:python": {
-            // "foreground":"#2ee2fa"
-        },
-        "parameter.declaration:python": { // bunu açınca self in rengini eziyor
-            "foreground":"#2ee2fa",
-            // "fontStyle":"italic"
-        },
-        // Function Parameter Type Hint
-        "class.typeHint:python": {
-            "foreground":"#3bbea4",
-            "fontStyle":"italic"
-        },
-        // Class Name
-        "class.declaration:python": {
-            "foreground":"#3bbea4",
-            "fontStyle":"italic"
-        },
-        "class:python": {
-            "foreground":"#b63b87",
-            "fontStyle":"bold"
-        },
-        // Self
-        "selfParameter:python": { 
-            "foreground":"#ce86b3",
-        },
-        "selfParameter.declaration:python": { 
-            "foreground":"#ce86b3",
-        },
+		// Python ...
+		// Import Name and Alias
+		"module:python": {
+			"foreground": "#b87e70"
+		},
+		// Variable Name
+		"variable.declaration:python": {
+			"foreground": "#2ee2fa",
+			"fontStyle": "underline"
+		},
+		"variable.builtin:python": {
+			"foreground": "#72f1b8",
+			"fontStyle": "italic"
+		},
+		// Function Parameter Type Hint
+		"class.typeHint:python": {
+			"foreground": "#3bbea4",
+			"fontStyle": "italic"
+		},
+		// Class
+		"class.declaration:python": {
+			"foreground": "#3bbea4"
+		},
+		"class:python": {
+			"foreground": "#b63b87",
+			"fontStyle": ""
+		},
+		"class.decorator:python": {
+			"foreground": "#ad33ff",
+			"fontStyle": ""
+		},
+		"magicFunction.declaration:python": {
+			"foreground": "#9db953"
+		},
+		"clsParameter:python": {
+			"foreground": "#bb9af7",
+			"fontStyle": "italic"
+		},
+		// Self
+		"selfParameter:python": {
+			"foreground": "#ce86b3",
+			"fontStyle": "italic"
+		},
+		// Property
+		"property.declaration:python": {
+			"foreground": "#dcdcaa", //d19a66
+			"fontStyle": "underline"
+		},
 		// Dart ...
 		// Import Alias
 		"variable.importPrefix:dart": {
@@ -786,147 +796,142 @@
 				"foreground": "#3d71ff"
 			}
 		},
-        {
+		{
 			"name": "Overload Keyword",
 			"scope": "source.python entity.name.function.decorator",
 			"settings": {
 				"foreground": "#ad33ff",
-                "fontStyle": ""
+				"fontStyle": ""
 			}
 		},
-        {
+		{
 			"name": "Control Keyword",
 			"scope": "source.python keyword.control.flow",
 			"settings": {
 				"foreground": "#ff0096"
 			}
 		},
-        {
+		{
 			"name": "Class Keyword",
 			"scope": "source.python storage.type.class",
 			"settings": {
 				"foreground": "#ad33ff",
-                "fontStyle": "italic bold"
+				"fontStyle": "italic bold"
 			}
 		},
-        {
+		{
 			"name": "Definition Keyword",
 			"scope": "source.python storage.type.function",
 			"settings": {
 				"foreground": "#ad33ff",
-                "fontStyle": "italic bold"
+				"fontStyle": "italic bold"
 			}
 		},
-        // Operators
-        // {
-		// 	"name": "Assignment Operator",
-		// 	"scope": "source.python keyword.operator.assignment", // assignment, arithmetic, comparison
-		// 	"settings": {
-		// 		"foreground": "#ff0096"
-		// 	}
-		// },
-        {
-			"name": "Control Keyword",
+		// Operators
+		{
+			"name": "Operator",
 			"scope": "source.python keyword.operator",
 			"settings": {
-				"foreground": "#ff0096",
-				// "fontStyle": "bold"
+				"foreground": "#ff0096"
 			}
 		},
-        // Functions
-        {
+		// Functions
+		{
 			"name": "Function Name (Declaration)",
 			"scope": "source.python entity.name.function",
 			"settings": {
 				"foreground": "#ffb401",
-                "fontStyle": "underline"
+				"fontStyle": "underline"
 			}
 		},
-        {
+		{
 			"name": "Function Name (Call)",
 			"scope": "source.python meta.function-call.generic, source.python support.function.builtin",
 			"settings": {
 				"foreground": "#0e9fe3"
 			}
 		},
-        {
-			"name": "Magic Function, Constructor",
+		{
+			"name": "Magic Function (Call)",
 			"scope": "source.python support.function.magic",
 			"settings": {
-				"foreground": "#b63b87",
+				"foreground": "#1ec0ef"
 			}
 		},
-        // Punctuations
-        {
+		// Punctuations
+		{
 			"name": "Function Begining Punctuation",
 			"scope": "source.python punctuation.section.function.begin",
 			"settings": {
 				"foreground": "#ad33ff",
-                "fontStyle": "bold"
+				"fontStyle": "bold"
 			}
 		},
-        {
+		{
 			"name": "Control Begining Punctuation",
 			"scope": "source.python punctuation.separator.colon",
 			"settings": {
 				"foreground": "#ff0096"
 			}
 		},
-        {
+		{
 			"name": "Function Return Punctuation",
 			"scope": "source.python punctuation.separator.annotation",
 			"settings": {
 				"foreground": "#ff0096"
 			}
 		},
-        // Values
-        {
+		// Values
+		{
 			"name": "String Value",
 			"scope": "source.python string.quoted.single",
 			"settings": {
 				"foreground": "#ff8b39"
 			}
 		},
-        {
+		{
 			"name": "Numeric Value",
 			"scope": "source.python constant.numeric.dec",
 			"settings": {
 				"foreground": "#fede5d"
 			}
 		},
-        {
-			"name": "Attribute Call",
-			"scope": "source.python meta.attribute.python",
+		{
+			"name": "Boolean Value",
+			"scope": "source.python constant.language",
 			"settings": {
-				"foreground": "#d19a66",
+				"foreground": "#f35de6"
 			}
 		},
-        // Types
-        {
+		// Types
+		{
 			"name": "Type Name",
 			"scope": "source.python support.type",
 			"settings": {
 				"foreground": "#3bbea4"
 			}
 		},
-        // {
-		// 	"name": "Self Name",
-		// 	"scope": "source.python variable.parameter.function.language.special.self, source.python variable.language.special.self",
-		// 	"settings": {
-		// 		"foreground": "#ce86b3"
-		// 	}
-		// },
-        {
+		{
 			"name": "Class Name",
 			"scope": "source.python entity.name.type.class",
 			"settings": {
 				"foreground": "#3bbea4"
 			}
 		},
-        
-        
-        
+		// Variables and Attributes
+		{
+			"name": "Variable",
+			"scope": "source.python variable.parameter.function-call",
+			"settings": {
+				"foreground": "#2ee2fa"
+			}
+		},
+		{
+			"name": "Attribute",
+			"scope": "source.python meta.attribute",
+			"settings": {
+				"foreground": "#dcdcaa" //d19a66
+			}
+		}
 	]
 }
-// ffdb00 sunrise
-// ce86b3 lavender
