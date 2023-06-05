@@ -10,6 +10,7 @@ Better dark background to keep eyes healty, better contrast with the selection o
 ### Supported languages and/or file extensions:
 * Go
 * Dart/Flutter
+* Python
 * JSON
 * CSV*
 * YAML
@@ -17,6 +18,7 @@ Better dark background to keep eyes healty, better contrast with the selection o
 
 Also semantic colors enabled for the followings:
 * Dart/Flutter
+* Python
 * Dockerfile
 
 (*) 'Rainbow CSV' extension is required to colorize csv files.
