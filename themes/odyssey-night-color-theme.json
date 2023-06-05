@@ -238,7 +238,7 @@
 		},
 		// Property
 		"property.declaration:python": {
-			"foreground": "#dcdcaa", //d19a66
+			"foreground": "#fde69a", //d19a66, dcdcaa
 			"fontStyle": "underline"
 		},
 		// Dart ...
@@ -930,7 +930,7 @@
 			"name": "Attribute",
 			"scope": "source.python meta.attribute",
 			"settings": {
-				"foreground": "#dcdcaa" //d19a66
+				"foreground": "#fde69a" //d19a66, dcdcaa
 			}
 		}
 	]
