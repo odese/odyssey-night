@@ -788,14 +788,14 @@
 			}
 		},
 		// Python ...
-        {
-            "name": "Comment Block",
-            "scope": "source.python string.quoted.docstring.multi.python",
-            "settings": {
-                "foreground": "#40A13D",
-                "fontStyle": "italic"
-            }
-        },
+		{
+			"name": "Comment Block",
+			"scope": "source.python string.quoted.docstring.multi.python",
+			"settings": {
+				"foreground": "#40A13D",
+				"fontStyle": "italic"
+			}
+		},
 		// Keywords
 		{
 			"name": "Import Keyword",
