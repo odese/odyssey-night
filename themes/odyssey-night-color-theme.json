@@ -112,6 +112,9 @@
 		"terminal.ansiRed": "#cd3131",
 		"terminal.ansiBrightRed": "#ff0000",
 
+        // Git Related File Colors
+        "gitDecoration.modifiedResourceForeground": "#00a2ff",
+
 		// Tabs
 		"editorGroupHeader.tabsBackground": "#0e0f14",
 		"editorGroup.border": "#ad33ffbf",
@@ -141,8 +144,8 @@
 		"scrollbarSlider.activeBackground": "#3b3bb6",
 
 		// Minimap
-		"minimap.selectionHighlight": "#96827d",
-		"minimap.findMatchHighlight": "#7aa2f7",
+		"minimap.selectionHighlight": "#96827de6", 
+		"minimap.findMatchHighlight": "#7aa2f7e6",
 
 		// Debug Tool Bar
 		"debugToolBar.background": "#0a0b0f",
@@ -487,10 +490,17 @@
 			"name": "Package & Import Keywords",
 			"scope": [
 				"source.go keyword.package", //
-				"source.go keyword.import"
+				"source.go keyword.control.import"
 			],
 			"settings": {
 				"foreground": "#3d71ff"
+			}
+		},
+        {
+			"name": "Package Name",
+            "scope": "source.go entity.name.type.package", 
+			"settings": {
+				"foreground": "#D7DAE0"
 			}
 		},
 		{
@@ -517,7 +527,7 @@
 		// Support
 		{
 			"name": "Function Name (Call)",
-			"scope": "source.go support.function",
+			"scope": "source.go entity.name.function.support",
 			"settings": {
 				"foreground": "#0e9fe3"
 			}
