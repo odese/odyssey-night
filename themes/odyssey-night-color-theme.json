@@ -544,7 +544,7 @@
 			"name": "Type Name",
 			"scope": "source.go entity.name.type",
 			"settings": {
-				"foreground": "#ffb401"
+				"foreground": "#D7DAE0"
 			}
 		},
 		{
