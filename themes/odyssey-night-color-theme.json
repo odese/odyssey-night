@@ -112,8 +112,8 @@
 		"terminal.ansiRed": "#cd3131",
 		"terminal.ansiBrightRed": "#ff0000",
 
-        // Git Related File Colors
-        "gitDecoration.modifiedResourceForeground": "#00a2ff",
+		// Git Related File Colors
+		"gitDecoration.modifiedResourceForeground": "#00a2ff",
 
 		// Tabs
 		"editorGroupHeader.tabsBackground": "#0e0f14",
@@ -144,7 +144,7 @@
 		"scrollbarSlider.activeBackground": "#3b3bb6",
 
 		// Minimap
-		"minimap.selectionHighlight": "#96827de6", 
+		"minimap.selectionHighlight": "#96827de6",
 		"minimap.findMatchHighlight": "#7aa2f7e6",
 
 		// Debug Tool Bar
@@ -196,6 +196,12 @@
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
+		// Go ...
+		// Type Definition
+		"type.definition": {
+			"foreground": "#ffb401"
+		},
+
 		// Python ...
 		// Import Name and Alias
 		"module:python": {
@@ -496,9 +502,9 @@
 				"foreground": "#3d71ff"
 			}
 		},
-        {
+		{
 			"name": "Package Name",
-            "scope": "source.go entity.name.type.package", 
+			"scope": "source.go entity.name.type.package",
 			"settings": {
 				"foreground": "#D7DAE0"
 			}
@@ -952,8 +958,4 @@
 			}
 		}
 	]
-
-
-
-    
 }
