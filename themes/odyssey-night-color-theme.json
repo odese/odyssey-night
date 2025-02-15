@@ -337,6 +337,26 @@
 		},
 		"parameter:dockerfile": {
 			"foreground": "#c9d3ff"
+		},
+		// Vue ...
+		"property.defaultLibrary:vue": {
+			"foreground": "#0e9fe3"
+		},
+		"property.declaration:vue": {
+			"foreground": "#3BBEA4"
+		},
+		"variable.declaration:vue": {
+			"foreground": "#2EE2FA"
+		},
+		"parameter.declaration:vue": {
+			"foreground": "#2EE2FA"
+		},
+		"function.declaration.readonly:vue": {
+			"foreground": "#ffb401",
+			"fontStyle": "underline"
+		},
+		"method:vue": {
+			"foreground": "#0e9fe3"
 		}
 	},
 	"tokenColors": [
@@ -495,7 +515,7 @@
 		{
 			"name": "Package & Import Keywords",
 			"scope": [
-				"source.go keyword.package", //
+				"source.go keyword.package",
 				"source.go keyword.control.import"
 			],
 			"settings": {
@@ -556,7 +576,7 @@
 		{
 			"name": "Variable",
 			"scope": [
-				"source.go variable.other.assignment", //
+				"source.go variable.other.assignment",
 				"source.go variable.other.declaration"
 			],
 			"settings": {
@@ -824,8 +844,7 @@
 			"name": "Overload Keyword",
 			"scope": "source.python entity.name.function.decorator",
 			"settings": {
-				"foreground": "#ad33ff",
-				"fontStyle": ""
+				"foreground": "#ad33ff"
 			}
 		},
 		{
@@ -955,6 +974,303 @@
 			"scope": "source.python meta.attribute",
 			"settings": {
 				"foreground": "#fde69a" //d19a66, dcdcaa
+			}
+		},
+		// Refactor ...
+		// CSS ...
+		{
+			"name": "Class",
+			"scope": "source.css entity.other.attribute-name.class.css",
+			"settings": {
+				"foreground": "#AD33FF",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "Entity",
+			"scope": "source.css entity.name.tag.css",
+			"settings": {
+				"foreground": "#3BBEA4",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Color",
+			"scope": "source.css constant.other.color",
+			"settings": {
+				"foreground": "#c9ada7",
+				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "Property Name",
+			"scope": "support.type.property-name.css",
+			"settings": {
+				"foreground": "#7AA2F7"
+			}
+		},
+		{
+			"name": "Property Value",
+			"scope": "support.constant.property-value.css",
+			"settings": {
+				"foreground": "#72F1B8",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Numeric",
+			"scope": "constant.numeric.css",
+			"settings": {
+				"foreground": "#FEDE5D"
+			}
+		},
+		{
+			"name": "Unit",
+			"scope": [
+				"keyword.other.unit.px.css",
+				"keyword.other.unit.vw.css",
+				"keyword.other.unit.vh.css"
+			],
+			"settings": {
+				"foreground": "#D19A66",
+				"fontStyle": "italic"
+			}
+		},
+		// JavaScript ...
+		{
+			"name": "Import Keyword and From Keyword",
+			"scope": [
+				"source.js keyword.control.import.js",
+				"source.js keyword.control.from.js"
+			],
+			"settings": {
+				"foreground": "#3D71FF"
+			}
+		},
+		{
+			"name": "String Value (Single Quote) (For Package Name)",
+			"scope": "source.js meta.import.js string.quoted.single.js",
+			"settings": {
+				"foreground": "#B87E70"
+			}
+		},
+		{
+			"name": "String Value (Double Quote)",
+			"scope": "source.js meta.import.js string.quoted.double.js",
+			"settings": {
+				"foreground": "#B87E70"
+			}
+		},
+		{
+			"name": "Alias for Import",
+			"scope": "source.js meta.import.js variable.other.readwrite.alias.js",
+			"settings": {
+				"foreground": "#95D0F0"
+			}
+		},
+		{
+			"name": "Keyword (const, function)",
+			"scope": [
+				"source.js storage.type.js",
+				"source.js storage.type.function.js"
+			],
+			"settings": {
+				"foreground": "#AD33FF",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Keyword (return, if, async, await)",
+			"scope": [
+				"source.js keyword.control",
+				"source.js storage.modifier.async.js"
+			],
+			"settings": {
+				"foreground": "#FF0096"
+			}
+		},
+		{
+			"name": "Keyword (new)",
+			"scope": "source.js keyword.operator.new.js",
+			"settings": {
+				"foreground": "#AD33FF"
+			}
+		},
+		{
+			"name": "String Value",
+			"scope": [
+				"source.js string.quoted.single.js",
+				"source.js string.quoted.double.js",
+				"source.js meta.object.member.js"
+			],
+			"settings": {
+				"foreground": "#FF8B39"
+			}
+		},
+		{
+			"name": "Numeric Value",
+			"scope": "source.js constant.numeric.decimal.js",
+			"settings": {
+				"foreground": "#fede5d"
+			}
+		},
+		{
+			"name": "Null Value",
+			"scope": [
+				"source.js constant.language.null.js",
+				"source.ts constant.language.null.ts"
+			],
+			"settings": {
+				"foreground": "#F35DE6"
+			}
+		},
+		{
+			"name": "Numeric Value",
+			"scope": "source.js variable.other.property.js",
+			"settings": {
+				"foreground": "#FDE69A" // 2EE2FA
+			}
+		},
+		{
+			"name": "Operators",
+			"scope": [
+				"source.js storage.type.function.arrow.js",
+				"source.js punctuation.separator.key-value.js",
+				"source.js keyword.operator"
+			],
+			"settings": {
+				"foreground": "#FF0096",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Function",
+			"scope": [
+				"source.js entity.name.function.js",
+				"source.js entity.name.function.ts"
+			],
+			"settings": {
+				"foreground": "#0E9FE3"
+			}
+		},
+		{
+			"name": "Regex",
+			"scope": ["source.js constant.other.character-class.regexp"],
+			"settings": {
+				"foreground": "#72F1B8"
+			}
+		},
+		// HTML & Vue ...
+		{
+			"name": "HTML Punctuation",
+			"scope": "source.vue punctuation.definition.tag",
+			"settings": {
+				"foreground": "#FF0096"
+			}
+		},
+		{
+			"name": "HTML Tag",
+			"scope": [
+				"source.vue entity.name.tag.html",
+				"source.vue entity.name.tag.template.html",
+				"source.vue entity.name.tag.script.html.vue",
+				"source.vue entity.name.tag.style.html.vue"
+			],
+			"settings": {
+				"foreground": "#b63b87"
+			}
+		},
+		{
+			"name": "HTML Attribute Name",
+			"scope": "source.vue entity.other.attribute-name.html",
+			"settings": {
+				"foreground": "#fede5d",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "HTML Punctuation",
+			"scope": [
+				"source.vue punctuation.attribute-shorthand.bind.html.vue",
+				"source.vue punctuation.attribute-shorthand.event.html",
+				"source.vue punctuation.separator.key-value.html.vue",
+				"source.vue punctuation.separator.key-value.html"
+			],
+			"settings": {
+				"foreground": "#FF0096"
+			}
+		},
+		{
+			"name": "HTML Attribute Name",
+			"scope": "source.vue punctuation.definition.string",
+			"settings": {
+				"foreground": "#FF8B39"
+			}
+		},
+		{
+			"name": "HTML String Value",
+			"scope": [
+				"source.vue string.quoted.single.ts",
+				"source.vue string.quoted.double.ts",
+				"source.vue string.quoted.double.html",
+				"source.vue string.template.ts"
+			],
+			"settings": {
+				"foreground": "#FF8B39"
+			}
+		},
+		{
+			"name": "HTML Boolean Value",
+			"scope": "source.vue constant.language.boolean",
+			"settings": {
+				"foreground": "#F35DE6"
+			}
+		},
+		{
+			"name": "Keyword Control",
+			"scope": [
+				"source.vue keyword.operator",
+				"source.vue keyword.control.conditional.vue",
+				"source.vue keyword.control.loop.vue",
+				"source.vue punctuation.accessor.optional.ts",
+				"source.vue punctuation.definition.template-expression.begin.ts",
+				"source.vue storage.type.function.arrow.ts"
+			],
+			"settings": {
+				"foreground": "#FF0096",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "HTML Variable Object",
+			"scope": [
+				"source.vue variable.other.readwrite.ts",
+				"source.vue variable.other.object.ts",
+				"source.vue variable.parameter.ts"
+			],
+			"settings": {
+				"foreground": "#2EE2FA"
+			}
+		},
+		{
+			"name": "HTML Null",
+			"scope": "source.vue constant.language.null.ts",
+			"settings": {
+				"foreground": "#F35DE6"
+			}
+		},
+		{
+			"name": "HTML Numeric",
+			"scope": "source.vue constant.numeric.decimal.ts",
+			"settings": {
+				"foreground": "#FEDE5D"
+			}
+		},
+		{
+			"name": "HTML variable",
+			"scope": "source.vue variable.other.property.ts",
+			"settings": {
+				"foreground": "#D7DAE0"
 			}
 		}
 	]
